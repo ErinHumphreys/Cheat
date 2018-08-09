@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    My cheat sheet
+  </title>
+</head>
+
+
+<body>
+  <h2>Configure Tooling</h2>
+    <article>
+      <p>$ git config --global user.name "[name]"<p>
+      <p>Sets the name you want attached to your commit transactions<p>
+      <p>$ git config --global user.email "[email address]"<p>
+      <p>Sets the email you want attached to your commit transactions<p>
+      <p>$ git config --global color.ui auto<p>
+      <p>Enables helpful colorization of command line output<p>
+      <h2>CREATE REPOSITORIES<h2>
+      <p>$ git init [project-name]<p>
+      <p>$ git clone [url]<p>
+
+
+      <h1>MAKE CHANGES</h1>
+       <p>$ git status<p>
+       <p>$ git diff<p>
+       <p>$ git add [file]<p>
+       <p>$ git diff --staged<p>
+       <p>$ git reset [file]<p>
+       <p>$ git commit -m "[descriptive message]"<p>
+
+       <h1>GROUP CHANGES</h1>
+       <p>$ git branch<p>
+       <p>$ git branch [branch-name]<p>
+       <p>$ git checkout [branch-name]<p>
+       <p>$ git merge [branch]<p>
+       <p>$ git branch -d [branch-name]<p>
+
+      <h1>REFACTOR FILENAMES</h1>
+      <p>$ git rm [file]<p>
+      <p>$ git rm --cached [file]<p>
+      <p>$ git mv [file-original] [file-renamed]<p>
+
+      <h1>SUPPRESS TRACKING</h1>
+      <p>Exclude temporary files and paths<p>
+      <li>*.log</li>
+      <li>build/</li>
+      <li>temp-*</li>
+      <p>A text file named .gitignore suppresses accidental versioning of files and paths matching the specified patterns<p>
+      <p>$ git ls-files --other --ignored --exclude-standard<p>
+
+      <h1>SAVE FRAGMENTS</h1>
+      <p>$ git stash<p>
+      <p>$ git stash pop<p>
+      <p>$ git stash list<p>
+      <p>$ git stash drop<p>
+
+      <h1>REVIEW HISTORY</h1>
+      <p>$ git log<p>
+      <p>$ git log --follow [file]<p>
+      <p>$ git diff [first-branch]...[second-branch]<p>
+      <p>$ git show [commit]<p>
+
+      <h1>REDO COMMITS</h1>
+      <p>$ git reset [commit]<p>
+      <p>$ git reset --hard [commit]<p>
+
+      <h1>SYNCHRONIZE CHANGES</h1>
+      <p>$ git fetch [bookmark]<p>
+      <p>$  git merge [bookmark]/[branch]<p>
+      <p>$ git push [alias] [branch]<p>
+      <p>$ git pull<p>
+    </article>
+
+</body>
+
+</html>
